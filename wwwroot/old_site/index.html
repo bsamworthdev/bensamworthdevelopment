@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>Ben Samworth Development</title>
+
+    <script src="//code.angularjs.org/1.6.8/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.6.8/angular-route.min.js"></script>
+    <script src="//code.angularjs.org/1.6.8/angular-animate.js"></script>
+    <script src="app.js"></script>
+    <script src="menu.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Ben Samworth">
+    <meta name="description" content="Ben Samworth Development">
+    <meta name="keywords" content="development, solihull">
+    <title>Ben Samworth Development</title>
+    <link rel="stylesheet" type="text/css" media="all" href="style.css">
+    <link rel="stylesheet" href="plugins/colorbox-master/example1/colorbox.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="plugins/colorbox-master/jquery.colorbox.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script language="Javascript">
+        var user;
+        var domain;
+        var suffix;
+
+        function Myemail(user, domain, suffix) {
+            document.write('<a href="' + 'mailto:' + user + '@' + domain + '.' + suffix + '">' +
+                user + '@' + domain + '.' + suffix + '</a>');
+        }
+    </script>
+
+    <script>
+    </script>
+
+</head>
+
+<body id="main_body">
+
+    <div id="headerDiv">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" id="tblHeader">
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <img id="imgLogo" src="resources/computer2.png" onclick="myJS.showPageDiv('Home');" alt="Header image">
+                            </td>
+                            <td style="width:auto;">
+
+                                <h4 id="lblCompanyNo"> Company Number: 11294146</h4>
+                                <h1 id="h1CompanyHeader">Ben Samworth Development</h1>
+                                <h1 id="h1CompanySubHeader">
+                                    <span id="spanSubHeader">Professsional Customer-Centred Software Development</span>
+                                    <a href="https://www.linkedin.com/company/30147432/" target="_blank">
+                                        <img id="liLogo" src="Resources/linkedin.png" alt="Header image">
+                                    </a>
+                                    <a href="https://www.facebook.com/Ben-Samworth-Development-Ltd-115955086510016" target="_blank">
+                                        <img id="fbLogo" src="Resources/facebook.png" alt="Header image">
+                                    </a>
+
+
+                                </h1>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </div>
+    <div id="divMain">
+        <table id="tblMain" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" class="NavigationBar">
+                            <tbody>
+                                <tr data-active-menu="selected">
+                                    <td class="NavigationMenuItem " menuName="Home"><a is-active-nav href="#/">Home</a></td>
+                                    <td class="NavigationMenuItem" menuName="Portfolio"><a is-active-nav href="#/portfolio">Portfolio</a></td>
+                                    <td class="NavigationMenuItem" menuName="About"><a is-active-nav href="#/about">About Us</a></td>
+                                    <td class="NavigationMenuItem" menuName="Contact"><a is-active-nav href="#/contact">Contact Us</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="purpleBar">
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="divMainContent" ng-view>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr id="footerBar">
+                    <td>Ben Samworth Development- Company Number: 11294146</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

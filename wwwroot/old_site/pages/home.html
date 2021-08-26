@@ -1,0 +1,29 @@
+﻿<table id="tblHome">
+    <tr>
+        <td style="vertical-align:top;">
+            <h2>
+
+            </h2>
+            <p>
+                <ul>
+                    <li>Looking to create your first website?</li>
+                    <li> Is it time your site received that long-overdue update?</li>
+                </ul>
+            </p>
+            <p>
+                At BSD we pride ourselves on taking the time to understand exactly what you want from your website. From start to finish we will work closely with you to help achieve that level of perfection.
+            </p>
+            <p>
+
+            </p>
+            <!--<img src="http://placehold.it/350x180&text=No Pic" >-->
+        </td>
+        <td rowspan="2" id="tdHomeRight">
+            <div class="divTestimonial" ng-controller="testimonialController">
+                <div ng-show="animate" class="divTestimonialStatement" ng-bind="statement"></div>
+                <div ng-show="animate" class="divTestimonialAuthor" ng-bind="author"></div>
+                <div class="divTestimonialNext"><a class="lnkTestimonialNext" ng-click="nextTestimonial()">Next &#10137;</a></div>
+            </div>
+        </td>
+    </tr>
+</table>
